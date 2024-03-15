@@ -62,11 +62,11 @@ function Turn (reds_turn: boolean) {
 function askQuestion () {
     question = game.askForNumber("Which connect 4 map? Type1:6x6map Type2:7x7map Type3:8x8map", 1)
     if (true) {
-        tiles.setCurrentTilemap(tilemap`level10`)
+        tiles.setCurrentTilemap(tilemap`7x7map`)
     } else if (0 == 0) {
-        tiles.setCurrentTilemap(tilemap`6x6 connect 4`)
+        tiles.setCurrentTilemap(tilemap`6X6map`)
     } else {
-        tiles.setCurrentTilemap(tilemap`level12`)
+        tiles.setCurrentTilemap(tilemap`8x8map`)
     }
 }
 let question = 0
@@ -78,7 +78,7 @@ namespace userconfig {
     export const ARCADE_SCREEN_WIDTH = 240
     export const ARCADE_SCREEN_HEIGHT = 200
 }
-let maps = [tilemap`level20`, tilemap`level22`, tilemap`level24`]
+let maps = [tilemap`6X6map`, tilemap`7x7map`, tilemap`8x8map`]
 tiles.setCurrentTilemap(maps._pickRandom())
 scene.setBackgroundColor(4)
 scene.centerCameraAt(15 * 15 / 2, 16 * 16 / 2)
