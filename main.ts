@@ -3,15 +3,15 @@ namespace SpriteKind {
 }
 scene.onHitWall(SpriteKind.chip, function (sprite, location) {
     if (red_turn) {
-
+    	
     } else {
-
+    	
     }
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     generated_chip.vy = 150
 })
-function Turn(reds_turn: boolean) {
+function Turn (reds_turn: boolean) {
     chip_being_placed = true
     if (reds_turn) {
         generated_chip = sprites.create(img`
@@ -59,12 +59,12 @@ function Turn(reds_turn: boolean) {
     }
     tiles.placeOnTile(generated_chip, tiles.getTileLocation(7, 3))
 }
-function askQuestion() {
+function askQuestion () {
     question = game.askForNumber("Which connect 4 map? Type1:6x6map Type2:7x7map Type3:8x8map", 1)
     if (true) {
         tiles.setCurrentTilemap(tilemap`level10`)
     } else if (0 == 0) {
-        tiles.setCurrentTilemap(tilemap`level11`)
+        tiles.setCurrentTilemap(tilemap`6x6 connect 4`)
     } else {
         tiles.setCurrentTilemap(tilemap`level12`)
     }
@@ -78,7 +78,7 @@ namespace userconfig {
     export const ARCADE_SCREEN_WIDTH = 240
     export const ARCADE_SCREEN_HEIGHT = 200
 }
-let maps = [tilemap`level13`, tilemap`level14`, tilemap`level15`]
+let maps = [tilemap`8x8`, tilemap`level22`, tilemap`level24`]
 tiles.setCurrentTilemap(maps._pickRandom())
 scene.setBackgroundColor(4)
 scene.centerCameraAt(15 * 15 / 2, 16 * 16 / 2)
