@@ -78,7 +78,7 @@ namespace userconfig {
     export const ARCADE_SCREEN_WIDTH = 240
     export const ARCADE_SCREEN_HEIGHT = 200
 }
-let maps = [tilemap`level13`, tilemap`level14`, tilemap`level15`]
+let maps = [tilemap`level20`, tilemap`level22`, tilemap`level24`]
 tiles.setCurrentTilemap(maps._pickRandom())
 scene.setBackgroundColor(4)
 scene.centerCameraAt(15 * 15 / 2, 16 * 16 / 2)
