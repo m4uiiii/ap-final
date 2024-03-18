@@ -94,6 +94,7 @@ let most_right_column = 0
 let most_left_column = 0
 most_left_column = 4
 most_right_column = 11
+askQuestion()
 namespace userconfig {
     export const ARCADE_SCREEN_WIDTH = 240
     export const ARCADE_SCREEN_HEIGHT = 200
